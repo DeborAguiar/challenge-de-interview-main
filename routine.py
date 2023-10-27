@@ -13,13 +13,13 @@ class EquipmentFailureProcessor:
         
         total_failure_count = self._total_failure_count(self.df_logs)
         most_failed_equipment_name = self._most_failed_equipment_name(self.df_logs, self.df_equipment_sensors, self.df_equipment)
-        """ groups_mean = self._group_mean_failures(self.df_equipment)
+        groups_mean = self._group_mean_failures(self.df_equipment)
         most_failed_sensor_per_equipment = self._most_failed_sensor_per_equipment()
 
         print(f"Total de falhas: {total_failure_count}")
         print(f"Equipamento com mais falhas: {most_failed_equipment_name}")
         print(f"Média por grupo:\n{groups_mean.to_string(header=False)}")
-        print(f"Sensor que mais deu erro para cada equipamento:\n{most_failed_sensor_per_equipment}") """
+        print(f"Sensor que mais deu erro para cada equipamento:\n{most_failed_sensor_per_equipment}")
 
     def _extract_data(self, data_folder):
         """
